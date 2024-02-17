@@ -1,0 +1,59 @@
+* { margin:0; padding:0; }
+#preloader{
+    background: #000 url(media/loading-screen.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-size: 35%;
+}
+@font-face {
+    font-family: 'Tunes';
+    src: url(media/1831-font.ttf);
+}
+body{
+    font-family: Tunes, Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to left, rgb(123, 201, 227),rgb(67, 148, 248));
+    font-size: 24px;
+    color: white;
+}
+.main{
+    background-color: transparent;
+    height: 100%;
+}
+.toolbar{
+    display: flex;
+    justify-content: right;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.579);
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+.content{
+    padding-top: 60px;
+    
+}
+.tab{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 18px;
+    font-family: Tunes;
+    margin: 10px;
+    animation: buttonHover;
+    color: black;
+    text-decoration: none;
+}
+@keyframes buttonHover {
+    0%{
+        transform: scaleX(1);
+    }
+    100%{
+        transform: scaleX(1.1);
+    }
+}
+.tab:hover{
+    transform:scaleX(1.1);
+    color: white;
+}
